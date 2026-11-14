@@ -343,17 +343,6 @@ footer p + p {
   margin-top: 0.4rem;
 }
 
-.contador {
-  display: inline-flex;
-  gap: 1.25rem;
-  margin-top: 1rem;
-  font-variant-numeric: tabular-nums;
-}
-
-.contador span b {
-  color: var(--texto);
-}
-
 @media (max-width: 40rem) {
   .nav-links a:not(.lang-btn) {
     display: none;
