@@ -1,0 +1,37 @@
+# Kuida
+
+> App gratuita de acompañamiento para nenas con dolor crónico pediátrico (Android 8+). Acompaña la terapia física y sensorial, la medicación, el registro del dolor y los momentos de calma. Todo queda registrado y se sincroniza entre los celulares de la familia. Free app supporting children with pediatric chronic pain. Aplicativo gratuito para crianças com dor crônica pediátrica.
+
+Kuida es una aplicación móvil Android para familias que acompañan a niñas con dolor crónico pediátrico. No reemplaza el plan del equipo de salud: lo acompaña. Creada y mantenida por una familia que vive esta realidad. Distribuida como APK gratuita e instalación directa.
+
+## Qué hace la app (módulos)
+
+- **Piecitos**: rutinas cortas de terapia física y sensorial, paso a paso, con explicaciones, para nenas y para adultos.
+- **Escalera de texturas**: desensibilización graduada en seis peldaños, de la seda a la mano.
+- **Entrenamiento del cerebro**: imaginería motora graduada (reconocer, imaginar, espejear, mover).
+- **Medicación clara**: recordatorios de tomas, historial, ayuda contextual y avisos de compra cuando el stock se agota.
+- **Registro de dolor**: check-ins con caritas, zonas del cuerpo y sensaciones.
+- **Visitas al doctor**: cuaderno de consultas médicas con fecha, profesional, notas, dudas para la próxima visita y resumen en PDF para llevar a la consulta.
+- **Bitácora familiar**: registro compartido de todo lo hecho entre cuidadores, sincronizado en tiempo real.
+- **El Refugio**: cuentos para leer en voz alta, adivinanzas, cartas Apalabrados, respiración guiada con Lila, ejercicio 5-4-3-2-1 y mensajes de poder.
+- **Detective de la Red Neural**: misiones que explican cómo funciona el dolor, calman las alarmas del cuerpo y preparan la vuelta a la escuela y el sueño.
+- **Lila, la mascota**: un huevo que crece con cada paso (oruga, crisálida, mariposa) y celebra el esfuerzo, nunca el resultado.
+- **Familia conectada**: sincronización multiusuario entre los celulares de la familia (SQLite local + Firebase).
+
+## Datos clave
+
+- Idiomas: español, inglés, portugués.
+- Precio: gratis, sin anuncios.
+- Plataforma: Android 8 o superior, instalación directa por APK.
+- Descarga: https://github.com/matalb23/kuida-landing/releases/latest
+- Sitio web: https://matalb23.github.io/kuida-landing/
+- Contacto: matalb23@gmail.com
+- Público: familias de nenas con dolor crónico pediátrico (dolor crónico infantil, síndrome de dolor regional complejo, hipermovilidad, fibromialgia pediátrica y similares).
+- Código de la app: https://github.com/matalb23/Kuida (licencia MIT)
+
+## Páginas
+
+- [Kuida en español](https://matalb23.github.io/kuida-landing/es/)
+- [Kuida in English](https://matalb23.github.io/kuida-landing/en/)
+- [Kuida em português](https://matalb23.github.io/kuida-landing/pt/)
+- [Cómo instalar el APK](https://matalb23.github.io/kuida-landing/es/#instalar)

@@ -1,0 +1,25 @@
+{
+  "name": "Kuida",
+  "short_name": "Kuida",
+  "description": "Acompañamiento diario para nenas con dolor crónico pediátrico. Terapia, medicación, registro del dolor y calma en familia.",
+  "lang": "es",
+  "start_url": "es/",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#B8B9CF",
+  "theme_color": "#B8B9CF",
+  "icons": [
+    {
+      "src": "assets/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/favicon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://matalb23.github.io/kuida-landing/sitemap.xml
