@@ -1,0 +1,361 @@
+:root {
+  --lavanda: #b8b9cf;
+  --primario: #6d7098;
+  --primario-suave: #eceef5;
+  --acento: #d98cb3;
+  --fondo: #fafafd;
+  --texto: #2b2c38;
+  --texto-suave: #5c5e70;
+  --tarjeta: #ffffff;
+  --borde: #e3e4ee;
+  --ok: #4c9a6e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primario: #a5a8cf;
+    --primario-suave: #23243a;
+    --fondo: #16171f;
+    --texto: #ececf2;
+    --texto-suave: #a9abbf;
+    --tarjeta: #1f2029;
+    --borde: #2e2f3d;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--primario);
+}
+
+.container {
+  width: min(100% - 2.5rem, 60rem);
+  margin-inline: auto;
+}
+
+/* ---------- Header ---------- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--fondo) 85%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--borde);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.75rem;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.nav-logo img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.nav-links a:not(.lang-btn) {
+  color: var(--texto-suave);
+  text-decoration: none;
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.5rem;
+}
+
+.nav-links a:not(.lang-btn):hover {
+  background: var(--primario-suave);
+  color: var(--texto);
+}
+
+.lang-btn {
+  display: inline-block;
+  padding: 0.3rem 0.65rem;
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--texto-suave);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.lang-btn[aria-current="true"] {
+  background: var(--primario);
+  border-color: var(--primario);
+  color: #fff;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  padding-block: 4rem 3rem;
+  text-align: center;
+}
+
+.hero img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 1.4rem;
+  margin-inline: auto;
+  box-shadow: 0 10px 30px rgb(109 112 152 / 0.35);
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 6vw, 3.2rem);
+  margin-top: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.hero p.tagline {
+  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+  color: var(--texto-suave);
+  max-width: 34rem;
+  margin: 0.75rem auto 1.75rem;
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--primario);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgb(109 112 152 / 0.4);
+}
+
+.btn-secondary {
+  border: 1.5px solid var(--borde);
+  color: var(--texto);
+  background: var(--tarjeta);
+}
+
+.download-badge img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px;
+}
+
+.hero .nota-apk {
+  margin-top: 0.9rem;
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+}
+
+/* ---------- Secciones ---------- */
+section {
+  padding-block: 3rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  margin-bottom: 0.5rem;
+}
+
+.section-sub {
+  text-align: center;
+  color: var(--texto-suave);
+  max-width: 38rem;
+  margin: 0 auto 2.5rem;
+}
+
+/* ---------- Features ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 1rem;
+  padding: 1.5rem 1.25rem;
+}
+
+.card .emoji {
+  font-size: 1.9rem;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.card p {
+  font-size: 0.92rem;
+  color: var(--texto-suave);
+}
+
+/* ---------- Historia ---------- */
+.story {
+  background: var(--primario-suave);
+  border-radius: 2rem;
+}
+
+.story .container {
+  max-width: 46rem;
+}
+
+.story blockquote {
+  font-size: clamp(1rem, 2.2vw, 1.15rem);
+  text-align: center;
+}
+
+.story blockquote p {
+  margin-bottom: 1rem;
+}
+
+.story .firma {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-style: italic;
+  color: var(--texto-suave);
+}
+
+/* ---------- Instalar ---------- */
+.steps {
+  display: grid;
+  gap: 1rem;
+  max-width: 34rem;
+  margin-inline: auto;
+  counter-reset: paso;
+}
+
+.paso {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: var(--tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 1rem;
+  padding: 1.1rem 1.25rem;
+}
+
+.paso::before {
+  counter-increment: paso;
+  content: counter(paso);
+  flex: 0 0 auto;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--primario);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.paso strong {
+  display: block;
+}
+
+.paso p {
+  color: var(--texto-suave);
+  font-size: 0.92rem;
+}
+
+/* ---------- Contacto ---------- */
+.contacto .opciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  border-top: 1px solid var(--borde);
+  padding-block: 2rem;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--texto-suave);
+}
+
+footer .disclaimer {
+  max-width: 32rem;
+  margin: 0 auto 0.75rem;
+  font-weight: 600;
+  color: var(--texto);
+}
+
+footer p + p {
+  margin-top: 0.4rem;
+}
+
+.contador {
+  display: inline-flex;
+  gap: 1.25rem;
+  margin-top: 1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.contador span b {
+  color: var(--texto);
+}
+
+@media (max-width: 40rem) {
+  .nav-links a:not(.lang-btn) {
+    display: none;
+  }
+}
