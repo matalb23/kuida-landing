@@ -1,12 +1,12 @@
 # Kuida
 
-> App gratuita de acompañamiento para nenas con dolor crónico pediátrico (Android 8+). Acompaña la terapia física y sensorial, la medicación, el registro del dolor y los momentos de calma. Todo queda registrado y se sincroniza entre los celulares de la familia. Free app supporting children with pediatric chronic pain. Aplicativo gratuito para crianças com dor crônica pediátrica.
+> App gratuita de acompañamiento para niños y niñas con dolor crónico pediátrico y para adultos con neuropatía (Android 8+). Acompaña la terapia física y sensorial, la medicación, el registro del dolor y los momentos de calma. Todo queda registrado y se sincroniza entre los celulares de la familia. Free app supporting children with pediatric chronic pain and adults with neuropathy. Aplicativo gratuito para crianças e adultos com dor crônica.
 
-Kuida es una aplicación móvil Android para familias que acompañan a niñas con dolor crónico pediátrico. No reemplaza el plan del equipo de salud: lo acompaña. Creada y mantenida por una familia que vive esta realidad. Distribuida como APK gratuita e instalación directa.
+Kuida es una aplicación móvil Android para familias que acompañan a niños y niñas con dolor crónico pediátrico, y también para adultos con neuropatía. No reemplaza el plan del equipo de salud: lo acompaña. Creada y mantenida por una familia que vive esta realidad. Distribuida como APK gratuita e instalación directa.
 
 ## Qué hace la app (módulos)
 
-- **Piecitos**: rutinas cortas de terapia física y sensorial, paso a paso, con explicaciones, para nenas y para adultos.
+- **Piecitos**: rutinas cortas de terapia física y sensorial, paso a paso, con explicaciones, para niños, niñas y adultos.
 - **Escalera de texturas**: desensibilización graduada en seis peldaños, de la seda a la mano.
 - **Entrenamiento del cerebro**: imaginería motora graduada (reconocer, imaginar, espejear, mover).
 - **Medicación clara**: recordatorios de tomas, historial, ayuda contextual y avisos de compra cuando el stock se agota.
@@ -26,7 +26,7 @@ Kuida es una aplicación móvil Android para familias que acompañan a niñas co
 - Descarga: https://github.com/matalb23/kuida-landing/releases/latest
 - Sitio web: https://matalb23.github.io/kuida-landing/
 - Contacto: matalb23@gmail.com
-- Público: familias de nenas con dolor crónico pediátrico (dolor crónico infantil, síndrome de dolor regional complejo, hipermovilidad, fibromialgia pediátrica y similares).
+- Público: familias de niños y niñas con dolor crónico pediátrico (dolor crónico infantil, síndrome de dolor regional complejo, hipermovilidad, fibromialgia pediátrica y similares) y adultos con neuropatía.
 - Código de la app: https://github.com/matalb23/Kuida (licencia MIT)
 
 ## Páginas
